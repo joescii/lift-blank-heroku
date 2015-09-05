@@ -28,7 +28,7 @@ Add any other JVM options you need for running your application in production.
 ## Testing locally
 Before pushing to Heroku, you can verify your Heroku configuration locally.
 Run `sbt stage`.
-Execute the script specified in `Procfile`.
+Execute the script specified in `Procfile` or run `$ heroku local`.
 
 ## Multiple Dynos
 If you plan to run multiple web Dynos, you will need to [enable Session Affinity](https://blog.heroku.com/archives/2015/4/28/introducing_session_affinity).
