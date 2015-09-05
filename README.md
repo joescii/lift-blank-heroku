@@ -30,3 +30,5 @@ Before pushing to Heroku, you can verify your Heroku configuration locally.
 Run `sbt stage`.
 Execute the script specified in `Procfile`.
 
+## Multiple Dynos
+If you plan to run multiple web Dynos, you will need to [enable Session Affinity](https://blog.heroku.com/archives/2015/4/28/introducing_session_affinity).
