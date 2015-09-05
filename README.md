@@ -7,6 +7,7 @@ See it live at [http://lift-2-6-blank-heroku.herokuapp.com/](http://lift-2-6-bla
 
 ## Applying to your Lift project
 If you already have a Lift project that you want to deploy on Heroku, you will need to update the following.
+
 1. `project/plugins.sbt`: Add `sbt-native-packager` and bump the `xsbt-web-plugin` to the latest 
 (that might be the trickier part if your project requires any customization. 
 It may be possible to deploy to Heroku without using the latest, but you will at least need to go to `0.9.0` for Jetty 9 to work).
