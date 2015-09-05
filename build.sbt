@@ -19,7 +19,7 @@ libraryDependencies ++= {
   Seq(
     "net.liftweb"             %% "lift-webkit"                        % liftVersion           % "compile",
     "net.liftmodules"         %% ("lift-jquery-module_"+liftEdition)  % "2.9"                 % "compile",
-    "org.eclipse.jetty"       %  "jetty-webapp"                       % "9.2.7.v20150116"     % "container,test",
+    "org.eclipse.jetty"       %  "jetty-webapp"                       % "9.2.7.v20150116"     % "compile",
     "org.eclipse.jetty"       %  "jetty-plus"                         % "9.2.7.v20150116"     % "container,test", // For Jetty Config
     "org.eclipse.jetty.orbit" %  "javax.servlet"                      % "3.0.0.v201112011016" % "container,test" artifacts Artifact("javax.servlet", "jar", "jar"),
     "ch.qos.logback"          %  "logback-classic"                    % "1.0.6",
@@ -28,3 +28,9 @@ libraryDependencies ++= {
 }
 
 enablePlugins(JettyPlugin)
+
+enablePlugins(JavaAppPackaging)
+
+bashScriptConfigLocation := Some("${app_home}/../conf/jvmopts")
+
+mainClass in Compile := Some("bootstrap.liftweb.Start")
