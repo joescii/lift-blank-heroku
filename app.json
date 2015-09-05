@@ -1,0 +1,7 @@
+{
+  "name": "Lift Blank Sample",
+  "description": "A template for getting started with the popular Lift framework.",
+  "website": "http://liftweb.org",
+  "success_url": "/",
+  "addons": []
+}
