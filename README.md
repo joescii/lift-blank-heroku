@@ -23,10 +23,12 @@ Add `bashScriptConfigLocation` setting, which will allow setting the Lift `run.m
 Add `mainClass` just in case there are other `main` methods in your project.
 4. `Procfile`: Copy from this project.
 Change `lift-2-6-heroku-starter-template` to match the `name` setting from `build.sbt` of your Lift project.
-5. `src/main/resources/props/production.default.props`: Copy from this project, or add `jetty.port=$PORT` to your existing `production.default.props` file.
 6. `src/main/scala/bootstrap/liftweb/Start.scala`: Copy from this project.
 7. `src/test/scala/RunWebApp.scala`: This will no longer compile due to bumping to Jetty 9. Remove.
-8. `src/universal/conf/jvmopts`: Copy from this project.
+
+## Optional
+
+1. `src/universal/conf/jvmopts`: Copy from this project.
 Add any other JVM options you need for running your application in production.
 
 ## Testing locally
